@@ -1,0 +1,43 @@
+body a{
+color: purple;
+/* text-decoration:dotted; */
+font-family: Georgia;
+font-size: 50px;   
+}
+a:link{
+    color:red
+}
+a:visited{
+    color:black
+}
+button:hover{
+    background-color: aqua;
+    color:red;
+}
+/*li:first-child{
+    background-color: green;
+}
+li:last-child{
+    background-color: greenyellow;
+} */
+li:nth-child(2n+0){
+    background-color: green;
+    background-image: linear-gradient(30deg,orange,greenyellow,rgb(140, 105, 228));
+}
+li:nth-child(2n+1){
+    background-color: greenyellow;
+    background-image: linear-gradient(25deg, yellow,green,orange);
+}
+div:hover p {
+    display: table;
+}
+p{
+    display: none;
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+a.highlight:hover{
+    font-size: 50px;
+    color:brown;
+}

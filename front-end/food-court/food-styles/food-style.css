@@ -1,0 +1,96 @@
+body{
+    height: 721px;
+        width: 1503px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        background-size:auto;
+        background-color: rgb(57, 175, 234);
+        text-align: center;
+        border-radius:5px;
+        
+
+}
+img{
+    background-image: url("../food-images/image3.jpg");
+    border-radius: 10%;
+    box-shadow: 0 0 10px greenyellow;
+    transition: 1s;
+    align-items: left;
+   
+
+}
+
+.logo{
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(43, 132, 255);
+    font-size: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    /* border-top-left-radius: 100px;
+    border-top-right-radius: 100px; */
+    border-radius: 60%;
+    border-style: solid;
+    border-color: rgb(71, 0, 250);
+    background: linear-gradient(45deg,red,green,black);
+    
+
+}
+
+.tiffen{
+    font-stretch:inherit;
+    font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;;
+    font-style: oblique;
+    border:8px, 35px;
+    border-style: dashed;
+    border-radius: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.navigation-bar{
+    
+    background:linear-gradient(30deg,blue,green,yellow,red,black,whitesmoke);
+    font-family: Arial;
+    font-size: large;
+    padding:10px;
+    font-display:initial;
+}  
+.navigation-bar a {
+    text-decoration: none;
+    padding:10px;
+    display: inline-block;
+}
+.navigation-bar a:hover{
+    color:white;
+    background:green;
+    border-radius: 10px;
+}
+.breakfast{
+    display:flow-root;
+    flex-direction: column;
+}
+.idlly{
+    width:200px;
+    height:200px;
+    margin: 0px;
+}
+.dosa{
+    width: 200px;
+        height: 150px;
+        margin: 0px;
+        text-align: center;
+        align-items: center;
+}
+.poori{
+    width:200px;
+    height:200px;
+    margin: 0px;
+}

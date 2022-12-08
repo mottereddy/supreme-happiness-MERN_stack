@@ -1,0 +1,34 @@
+#main{
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgba(60, 57, 57, 0.377);
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+#result{
+        height: 75px;
+        width: 343px;
+        font-size: 40px;
+
+}
+
+button{
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+button>#equal{
+    background-color: red;
+}

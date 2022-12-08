@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .father{
+            grid-area:lakshmanreddy;
+        }
+        .mother{
+            grid-area:ravikuamri;
+        }
+        .sister{
+            grid-area:chandana;
+        }
+        .sister2{
+            grid-area:rajitha;
+        }
+        .nephew{
+            grid-area:vedansh;
+        }
+        .myname{
+            grid-area:sai;
+        }
+        div.family{
+            display:grid;
+            grid-template-areas: 'babu babu ravikumari ravikumari'
+                                'chandna chandana rajitha vedansh'
+                                'chandana chandana rajitha vedansh'
+                                'sai sai sai sai';
+            background-color: aqua;
+        }
+        .family div{
+            border: 5px solid greenyellow;
+            background-color: blueviolet;
+            color:whitesmoke;
+             padding:10px;
+             padding: 20px;
+            margin: 4px;
+        }
+    </style>
+    <title>grid</title>
+</head>
+<body>
+    <div class = "family">
+        <div class = "father">babu</div>
+        <div class = "mother">ravikumari</div>
+        <div class = "sister">chandana</div>
+        <div class = "sister2">rajitha</div>
+        <div class = "nephew">vedansh</div>
+        <div class = "myname">sai</div>
+        
+    </div>
+</body>
+</html>

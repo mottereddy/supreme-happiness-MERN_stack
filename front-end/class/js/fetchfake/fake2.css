@@ -1,0 +1,25 @@
+
+btn.addEventListener("click", ()=> {
+        root.innerText='';
+        create();
+    })
+})
+})
+}
+
+}) #root {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
+}
+
+#root>div {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#btn {
+    height: 30px;
+    width: 50px;
+}

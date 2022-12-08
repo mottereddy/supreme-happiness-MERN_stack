@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "grandParent">
+        grandParent
+        <div id = "parent">
+            parent
+            <div id = "child">
+                child
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+//if we given true then the technique is called event capturing
+//the flow will go from parent to child
+    let grandParent = document.getElementById("grandParent")
+        .addEventListener("click",function (e){
+            console.log("grand parent");
+        },true)
+
+    let parent = document.getElementById("parent")
+        .addEventListener("click", function (e) {
+            console.log("parent");
+        }, true)
+
+    let child = document.getElementById("child")
+        .addEventListener("click", function (e) {
+            console.log("child");
+        }, true)
+
+//-------------------------------------------------------------------------------------------
+
+//if we given false then it is event bubling by default it is false 
+//the technique flows from child to parent to grand parent 
+
+        let ggrandParent = document.getElementById("grandParent")
+            .addEventListener("click", function (e) {
+                console.log("grand parent");
+            },)
+
+        let pparent = document.getElementById("parent")
+            .addEventListener("click", function (e) {
+                console.log("parent");
+            }, true)
+
+        let cchild = document.getElementById("child")
+            .addEventListener("click", function (e) {
+                console.log("child");
+            }, true)
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body{
+    background-image: url("../images/indiamap2.png");
+background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-size: cover;
+    height: 1700px;
+    width: 1600px;
+}

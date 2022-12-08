@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION-FORM</title>
+    <link rel="stylesheet" href="./assignment4.css">
+</head>
+<body>
+    <H1>REGISTRATION FORM</H1>
+    <div id = "main">
+    <h2>USER ID : <input type="text" size="3" maxlength="10" class="box" required></h2>
+    <h2>PASSWORD : <input type="text" size="3" maxlength="10" class="box"></h2>
+    <h2>NAME : <input type="text" size="3" maxlength="10" class="box"></h2>
+    <h2>ADDRESS : <input type="text" size="3" maxlength="10" class="box"></h2>
+    <!-- <h2>COUNTRY : <input type="text" size="3" maxlength="10" class="box"></h2> -->
+    <h2>COUNTRY: <select size="2" name="country"></h2>
+        <option value="india">INDIA</option>
+        <option>USA</option>
+        <option>CHINA</option>
+        <option>JAPAN</option>
+        <option>AUSTRAILIA</option>
+    </select>
+    <h2>ZIP CODE : <input type="text" size="3" maxlength="10" class="box"></h2>
+    <h2>EMAIL : <input type="text" size="3" maxlength="10" class="box"></h2>
+    <h2>
+        <span>SEX: </span>
+        <span><input type="radio" name="gender">Male</span>
+        <span><input type="radio" name="gender">Female</span>
+
+    </h2>
+    <h2><span>LANGUAGE:</span> 
+        <span><input type="checkbox">ENGLISH</span>
+        <span><input type="checkbox">HINDI</span>
+        <span><input type="checkbox">TELUGU</span>
+        </span>
+    </h2>
+    <!-- <h2>ABOUT <input type="text"></h2> -->
+    <H2>ABOUT:
+    <textarea rows="5" cols="10" class="boxAbout"></textarea></H2>
+    <!-- <input type="button" value="SUBMIT" id = "submit"></input> -->
+    <button id = "submit" onclick="validate()">
+    <a>SUBMIT</a>
+    </button>
+    </div>
+
+    <script src="./assignment4.js"></script>
+</body>
+</html>

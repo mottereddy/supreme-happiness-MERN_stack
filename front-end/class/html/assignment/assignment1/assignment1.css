@@ -1,0 +1,76 @@
+
+body{
+background-color: #18a5ec;;
+}
+.full{
+width:100%;
+margin: auto;
+align-items: center;
+
+}
+.register{
+    border: 2px solid black;
+    height: 500px;
+        width: 300px;
+        background-color: white;
+        margin-left: 300px;
+        margin-top: 90px;
+        padding-left: 5px;
+        border-radius: 10px;
+
+}
+.login{
+            border: 2px solid black;
+            height: 500px;
+            width: 300px;
+            background-color: white;
+            margin-right:300px;
+            margin-top: 90px;
+            padding-left: 5px;
+            border-radius: 10px;
+}
+table{
+    width:100%;
+    margin:auto;
+}
+input{
+  height: auto;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 8px;
+  width: 270px;
+}
+.button{
+    background-color: rgb(88, 88, 183);
+    color: white;
+
+}
+h3.or-line{
+    margin-left: 90px;
+}
+.social1 img{
+    margin:0px;
+}
+.forgot{
+    text-align:right;
+    /*float: right;*/
+   margin-left: 170px; /* we can use any one like float or margin-left*/
+}
+#google{
+    background-image: url("google.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    text-indent: 15px;
+}
+
+#facebook {
+    background-image: url("fb.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    text-indent: 15px;
+}
+.social{
+    margin-left: 60px;
+}
+
+

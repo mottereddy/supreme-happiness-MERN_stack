@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "array"></h1>
+    <script>
+
+        const xyz = document.getElementById("array");
+
+        const array = [1,2,3,4,5];
+        const result1 = name(array);
+
+        function name(arr){
+            const result = Array.isArray(arr);
+            if(result==true){
+                xyz.innerText=result;
+            }else{
+            xyz.innerText==false;
+            }
+
+        }
+       
+    </script>
+</body>
+</html>,

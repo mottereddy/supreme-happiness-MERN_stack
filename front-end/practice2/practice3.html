@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button: full validation example with javascript</title>
+    <script>
+        function send() {
+            var genders = document.getElementsByName("gender");
+            if (genders[0].checked == true) {
+                // alert("Your gender is male");
+                var msg1 = "valid";
+                document.getElementById('msg').innerHTML = msg1;
+            } else if (genders[1].checked == true) {
+                // alert("Your gender is female");
+                var msg2 = "valid";
+                document.getElementById('msg').innerHTML = msg2;
+            } else {
+                // no checked
+                var msg = '<span style="color:red;">You must select your gender!</span><br /><br />';
+                document.getElementById('msg').innerHTML = msg;
+                return false;
+            }
+            return true;
+        }
+
+        function reset_msg() {
+            document.getElementById('msg').innerHTML = '';
+        }
+    </script>
+</head>
+
+<body>
+
+        <label>Gender:</label>
+        <br />
+        <input type="radio" name="gender" value="m" onclick="reset_msg();" />Male
+        <br />
+        <input type="radio" name="gender" value="f" onclick="reset_msg();" />Female
+        <br />
+        <div id="msg"></div>
+        <input type="submit" value="send>>" onclick="return send();" />
+
+</body>
+
+</html>

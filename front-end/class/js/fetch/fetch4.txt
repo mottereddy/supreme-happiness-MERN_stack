@@ -1,0 +1,10 @@
+
+we calling the text from the server 
+here fetch4.txt is the text server in the same folder
+we can call directly
+in method we want to use the .txt extension
+
+
+
+
+

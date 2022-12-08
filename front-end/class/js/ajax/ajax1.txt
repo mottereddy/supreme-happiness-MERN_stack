@@ -1,0 +1,8 @@
+hello this is chaitanya
+ajax means asyncronous javascript and xml
+to send the data from the server and to get the data from the server
+ here xmlhttprequest is the predefind object 
+ it has so many proprties and objects 
+
+ this data is displayed in the server web page using xmlhttprequest
+

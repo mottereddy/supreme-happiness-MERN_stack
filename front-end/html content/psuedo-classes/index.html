@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a.one:hover{
+            font-size: 25px;
+            color: orangered;
+        }
+
+        a.second:hover{
+            color:purple;
+        }
+        .third{
+            display: none;
+        }
+        div:hover p{
+                display:grid; /* here in display we can use any like (grid/block/inline/inline-block/table)except none*/
+                font-family:'Times New Roman', Times, serif;
+                color: blueviolet;
+                background-color: antiquewhite;
+        }
+
+        a.four:hover{
+            background-color: green;
+            font-size: 25px;
+        }
+        .five{
+            position: relative;
+          
+          
+
+        }
+        .five:before {
+        content: attr(data-hover);
+        visibility: hidden;
+        width: 140px;
+        background-color: rgb(37, 29, 29);
+        color: #fff;
+        text-align: right;
+        position:inherit;
+        top: 110%;
+        }
+        .five:hover:before {
+        opacity: 1;
+        visibility: visible;
+        }
+
+        .sixth::first-letter{
+            color: red;
+            font-variant: small-caps;
+            font-size: 50px;
+        }
+
+        .seventh::first-line{
+            color: blueviolet;
+            font-size: xx-large;
+        }
+        .eight::after{
+            content:url(smiley.gif);
+        }
+        .nine::marker{
+            font-size: xx-large;
+            font-variant:small-caps;
+        }
+
+    </style>
+
+
+    <title>psuedo</title>
+</head>
+<body>
+    <p>
+        <a class = "one">when we place mouse here it will changes the font size</a>
+    </p>
+
+    <p style="color:green">
+        <a class = "second"><b>when we place cursor on the text the text color changes</b></a>
+    </p>
+
+    <div>
+        when we place cursor on the text the text it will show another text
+        <p class = "third"><i>
+                hello i am the secret one text
+            </i></p>
+    </div>
+        <p><a class="four">
+            if we place cursor the background changes
+        </a></p>
+
+        <span class = "five" data-hover="cursor-message">
+            if we place the cursor on the text it will display some message on cursor
+        </span>
+
+        <br><br><br>
+
+        /*************************************psuedo elements************************************************** */ 
+
+        <h1><p class = "sixth">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis laborum, officiis sequi doloribus corporis officia
+                id nemo, tempora non quia nulla qui! Ullam at perferendis tempora, maiores odit nisi necessitatibus.
+
+        </p></h1>
+
+        <h1>
+            <p class = "seventh">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sed reiciendis deleniti quos error sit, laboriosam
+                neque corrupti debitis ab qui sequi sint similique quo ut aperiam placeat ipsam assumenda.
+
+            </p>
+        </h1>
+
+        <h1><p class = "eight">
+                hello this is chaitanya
+        </p></h1>
+
+        <ul class = "nine" style = "list-style-type: circle;">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ul>
+    
+</body>
+</html>

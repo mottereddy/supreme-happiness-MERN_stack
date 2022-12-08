@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+header{
+    background-color: blue;
+    color: antiquewhite;
+    margin:0px;
+    background: linear-gradient(45deg, orange, white, green);
+    padding: 8px;
+}
+nav a{
+    background-color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 0px;
+    display: inline-block;
+}

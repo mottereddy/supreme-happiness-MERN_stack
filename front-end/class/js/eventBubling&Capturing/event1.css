@@ -1,0 +1,21 @@
+#grandParent{
+    background-color: green;
+    margin: auto;
+    display: flex;
+    height: 300px;
+    width: 300px;
+}
+#parent {
+    background-color: red;
+    margin: auto;
+        display: flex;
+            height: 200px;
+                width: 200px;
+}
+#child {
+    background-color: blue;
+    margin: auto;
+        display: flex;
+            height: 100px;
+                width: 100px;
+}

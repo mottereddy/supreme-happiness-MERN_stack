@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>User id : </b><input type="text" placeholder="userid" id = "textUser"><br>
+    <label id = "lbltxtUser" style="color:red;visibility:hidden;"></label>
+<br>
+    <b>Password : </b><input type="password" placeholder="Password" id="textPass"><br>
+    <label id="lbltxtPass" style="color:red;visibility:hidden;"></label>
+<br>
+    <b>Name : </b><input type="text" placeholder="Name" id="textName"><br>
+    <label id="lbltxtName" style="color:red;visibility:hidden;"></label>
+<br>
+    <b>Address : </b><input type="text" placeholder="Address" id="textAdd"><br>
+    <label id="lbltxtAdd" style="color:red;visibility:hidden;"></label>
+<br>
+    <b>Country : </b>
+    <select id = "textCountry"size="1" required>
+        <option value="">Chose an Option</option>
+        <option value="INDIA">INDIA
+        <option value="USA">USA</option>
+        <option value="China">CHINA</option>
+        <option value="Japan">JAPAN</option>
+        <option value="AUSTRAILIA">AUSTRAILIA</option>
+    </select><br>
+    <label id = "lbltxtcountry" style="color:red;visibility: hidden;"></label>
+<br>
+<br>
+    <b>Zip Code : </b><input type="text" placeholder="ZipCode" id="textzip"><br>
+    <label id="lbltxtZip" style="color:red;visibility:hidden;"></label>
+<br><br>
+    <b>Email : </b><input type="text" placeholder="email" id = "text"><br>
+    <label id = "lbltext" style="color:red;visibility:hidden;"></label>
+<br>
+  
+<label>Gender:</label>
+
+<input type="radio" name="gender" value="m" onclick="reset_msg();" />Male
+<input type="radio" name="gender" value="f" onclick="reset_msg();" />Female
+<br />
+<div id="msg"></div>
+<!-- <input type="submit" value="send>>" onclick="return send();" /> -->
+
+<br>
+
+<!-- language -->
+<b>Launguage : </b>
+<input type="checkbox" name="lang" value="l" onclick="revalid()"/>English
+<input type="checkbox" name="lang" value="l" onclick="revalid()" />Telugu
+<br>
+<div id = "lbltxtlang"></div>
+<br>
+
+
+<b>About : </b><input type="About" placeholder="About" id="textAbout"><br>
+<label id="lbltxtabt" style="color:red;visibility:hidden;"></label>
+
+    <br>
+<!-- <button onclick="validate();validateUser();validatePass();validateName();validateAdd();validateZip();validateabout();validateS()">submit</button> -->
+<input type="submit" value="SUBMIT" onclick="validate();validatecountry();validateLang();validateGender();validateUser();validatePass();validateName();validateAdd();validateZip();validateabout();validateS()">
+
+    <script src="./form.js"></script>
+  </div>
+</body>
+</html>
