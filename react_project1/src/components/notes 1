@@ -1,0 +1,60 @@
+state:- state is an mutable object that is privately maintained inside a component
+state can be change with in the component
+state is mutable
+
+props vs state
+
+props:-
+->props get passed to the component
+->props are immutable
+->in functional component props can be accessed using the props parameter
+in class component props can be accessed using this.props
+
+state:-
+->state is managed with in the component
+->variables declared in the function body
+->state can be changed
+-> in state:- in class component the state can be accessed using the this.state
+
+why props are immutable?
+because the parent usally passess down the props to the child component props are immutable
+the parent owns the props and cannot be change by the children
+
+why state is mutable?
+state is mangaed with in the component and hence the component has full control to change the state
+
+how the props can be accessed?
+in functional component props can be accessed using the props parameter
+in class component props can be accessed using this.props
+
+how the state can be accessed in class
+in state:- in class component the state can be accessed using the this.state
+
+use of props and state :-
+the props and state holds the information and influence into the ui
+
+super:-
+the super keyword is required because we extend the react component class and a call has to be made to the base class constructor
+
+what is the use of shouldComponentUpdate?
+if we use shouldComponentUpdate it will stop the execution and it will ask whether to re render or not
+by default it will be true
+if it is true means it again re render
+if we return false means it didnot rerender
+
+if the prop data and state data is same means we didnt rerender again
+
+componentWillUnMount?
+when 
+the components are being method is called when the component is about to be removed from the DOM.
+
+if we update the state inside render method what will happens?
+it will continously re render , it will go to infinity loop
+
+what is the use of keys?
+to maintain the unique naature(each child have to maintain the unique nature)
+
+
+what is mean by conditional rendering?
+depending on the condition it will re render like elements or components
+

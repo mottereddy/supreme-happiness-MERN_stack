@@ -1,0 +1,18 @@
+
+#mainPop{
+    height: 700px;
+    width: 800px;
+    background-color:aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+
+}
+#regPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
