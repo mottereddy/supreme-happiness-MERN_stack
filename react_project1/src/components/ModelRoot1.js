@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ModelRoot from "./ModelRoot";
 //hello 
+//2nc comment
 class Child extends Component {
     render() {
         return (
