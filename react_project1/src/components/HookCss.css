@@ -1,0 +1,35 @@
+
+#Main-Ui{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+}
+
+.sub-Ui{
+    border:2px solid rgb(226, 81, 226);
+    border-radius: 40px;
+    box-shadow: (0deg 0% 0% / 0.25);
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.btn_Click{
+    color: black;
+    background-color:hsl(220deg 100% 80%);
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+}
+
+.btn_Click1 {
+    color: black;
+    background-color: hsl(220deg 100% 80%);
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+    margin-right: 500px;
+}
+
+

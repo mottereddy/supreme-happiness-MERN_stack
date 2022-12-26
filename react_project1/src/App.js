@@ -1,57 +1,53 @@
-// import logo from './logo.svg';
-import './App.css';
 import { Component } from 'react';
-// import Header from './components/Header';
-// import JSX1 from './components/JSX1';
-// import State from './components/State';
-// import Arrowfn from './components/Arrowfn';
-// import Cycle from './components/Cycle';
-// import Props from './components/Props'
-// import SetState from './components/SetState';
-// import Eventss from './components/Eventss';
-// import List from './components/List';
-// import Formm from './components/Formm';
-// import Compo from './components/Compo';
-// import LifeCycle from './components/LifeCycle';
-// import Practice2 from './components/Practice2';
-// import LiftingState from './components/LiftingState';
-// import Practice1 from './components/Practice1';
-// import Cycle1 from './components/Cycle1';
-// import Test1 from './components/Test1';
-// import Test from './components/Test';
-import ModelRoot1 from './components/ModelRoot1';
+import './App.css';
+import { Provider } from 'react-redux';
+import store from '../src/Store/store';
+import CounterRedex from './components/CounterRedex';
 
 class App extends Component {
 
   render() {
     return (
       <>
-        {/* <Header /> */}
-        {/* <State /> */}
-        {/* <Eventss/> */}
-        {/* <SetState /> */}
-        {/* <lifeCycle /> */}
-        {/* <List /> */}
-        {/* <Formm /> */}
-        {/* <Props fname="lakshman" /> */}
-        {/* <Cycle data={[1,2,3,4,5]} /> */}
-        {/* <JSX1/> */}
-        {/* <Compo age = "25"/> */}
-        {/* <Arrowfn /> */}
-        {/* <LifeCycle /> */}
-        {/* <Practice2 /> */}
-        {/* <LoginPage /> */}
-        {/* <LiftingState /> */}
-        {/* <Practice1 /> */}
-        {/* <Cycle1 /> */}
-        {/* <Test1 /> */}
-        {/* <Test /> */}
-        {/* <HigherComponent /> */}
-        <ModelRoot1 />
+        <Provider store={store}>
+          <CounterRedex />
+        </Provider>
       </>
-
     )
   }
 }
 
 export default App;
+
+
+
+
+// import { connect } from 'react-redux';
+// import { Component } from 'react';
+// import { incCounter } from './Store/actions';
+
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//   }
+//   render() {
+//     console.log(this.props);
+//     return (
+//       <>
+//         <div>{this.props.count}</div>
+//         <button onClick={() => this.props.incCount(this.props.count + 1)}>Inc</button>
+//         <button onClick={() => this.props.incCount(this.props.count - 1)}>Dec</button>
+//       </>
+//     );
+//   }
+// }
+// const mapStateToProps = (state) => {
+//   return { count: state.count };
+// };
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     incCount: (payload) => dispatch(incCounter(payload)),
+//   }
+// }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(App);

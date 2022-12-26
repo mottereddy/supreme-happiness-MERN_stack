@@ -52,7 +52,7 @@ class Asign extends Component {
                 {this.state.data.map((item) => (
                     <div class="card">
                         <h3>{item.id}</h3>
-                        <img src={item.image} className="image" style={{ height: "15p0x", width: "150px" }} alt="hello" />
+                        <img src={item.image} className="image" style={{ height: "250px", width: "250px" }} alt="hello" />
                         <h4>{item.category}</h4>
                         <h4>${item.price}</h4>
                     </div>

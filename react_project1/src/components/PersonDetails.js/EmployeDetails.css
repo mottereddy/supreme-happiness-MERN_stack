@@ -1,0 +1,21 @@
+
+.display-data{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: 5px solid rgb(44, 31, 31);
+}
+
+.container{
+    width: 70vw;
+    height: 90vh;
+    border-radius: 10px;
+}
+.main-container{
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}

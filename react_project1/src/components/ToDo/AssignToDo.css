@@ -1,0 +1,196 @@
+.App {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('/components/ToDo/img.jpg'); */
+    /* background: #548fc0;  */
+    background-image: linear-gradient(to bottom right,#a862d1,#d1607a );
+
+}
+
+.container {
+    width: 1465px;
+    height: 680px;
+    background:#67aade;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
+    /* background-image: linear-gradient(to right,hwb(220 40% 20%),hwb(221 40% 31%), #4ab1bc); */
+    background-image: linear-gradient(to right, hwb(220deg 55% 9%), hwb(221deg 55% 14%), #89cad1);
+}
+
+.title {
+    color: #0073ff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form_todo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control {
+    width: 87%;
+    height: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-control:hover{
+    background-color:#e1e1e1;
+}
+
+.btn {   /* add-btn*/
+    width: 10%;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #276c91;
+}
+
+.todos_wrapper {   /*main div container */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.todos_list {  /*4 container */
+    width: 31%;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    gap: 5px;
+}
+
+.todo_title {   /*4 headings underline bar*/
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.todo_title::after {     /* 4- headings underline */
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+}
+
+.todo_card {  
+    width: 100%;
+    height: auto;
+    color: #000000;
+    background-color: #e3eefa;
+    opacity: 0.8;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-right: 6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.card_text {   /*display -card text */
+    margin: auto;
+}
+
+.proceed-btn {   
+    color:black;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+.proceed-btn:hover{
+background-color: rgb(194, 193, 193)
+}
+.addBack-btn:hover{
+background-color: red;
+}
+.delete-todo {
+    background: rgb(237, 67, 67);
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.delete-todo:hover{
+background-color: red;
+}
+
+.progress_card {
+    width: 100%;
+    height: auto;
+    color: #000000;
+    background: #b2c9f8;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.progress-todo {   /*Progress container buttons*/
+    background: #fff;
+    color: black;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.progress-todo:hover{
+background-color: rgb(194, 193, 193)
+}
+.reviewd_card {
+    /*reviewd container */
+    /* background: rgb(237 175 160); */
+    background: rgb(160 211 255);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.addBack-btn{                                   /*add back button */ 
+            background: rgb(224, 107, 107);
+            color: rgb(253, 243, 243);
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+}
+
+.completed_card { /*completed container*/ 
+        background: rgb(163 233 249);
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+

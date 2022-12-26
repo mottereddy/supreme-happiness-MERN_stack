@@ -58,3 +58,9 @@ to maintain the unique naature(each child have to maintain the unique nature)
 what is mean by conditional rendering?
 depending on the condition it will re render like elements or components
 
+
+why we use the hooks?
+to use the lifecyclemethod in functional component we use hooks
+
+usestate?
+useState has two parameters one is intial value and second one is to update the state

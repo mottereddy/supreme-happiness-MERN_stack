@@ -1,0 +1,187 @@
+
+#root{
+    height: 745px;
+    background-image: url('./bg2.jpg');
+    background-size: cover;
+}
+.header_component{
+    color: rgb(88 178 36);
+    background-color:#ccffde;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.E-title{
+    font-size:70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    font-size:33px;
+    color: black;
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Add-Employee-Details{
+    height: 30px;
+    width: 150px;
+    margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: #ccffde;
+    background-color: rgb(119, 221, 187);
+    background-color:rgb(152, 235, 105);
+    cursor: pointer;
+}
+.Add-Employee-Details:hover{
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+
+
+.table-body-title{
+    background-color:#748274;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:x-large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-body{
+    background-color: rgb(152, 235, 105);
+    color: rgb(50, 202, 50);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.table-heading,
+td {
+    border: 1px solid black;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bolder;
+    color: black;
+    background-color:white;
+    width: 180px;
+
+}
+.table-heading,
+th{
+    border: 1px solid rgb(68, 65, 65);
+        font-family: "Orbitron", sans-serif;
+        font-weight: bolder;
+        color: rgb(25, 23, 23);
+        background-color:rgb(172, 245, 62)
+}
+.table-data{
+    margin-top: 20px;
+    margin-left: 110px;
+    border-spacing: 0px;
+}
+
+.popup-card{
+min-width: 100%;
+min-height: 100%;
+background-color: #c6f0cece;
+border-radius: 10px;
+  top: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+    align-items: center;  
+    position: absolute;
+}
+
+.inputs{
+    width: 500px;
+    height: 300px;
+    border: 2px solid rgb(86, 86, 86);
+    text-align: center;
+    background-color:grey;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:medium;
+    position:absolute;
+}
+
+
+.input-text{
+    display: flex;
+    flex-direction: column;
+}
+.input-box{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px;
+    border-style:outset;
+    border-radius: 5px;
+    width: 431px;
+    margin-left: 33px;
+}
+.input-box:hover{
+    cursor: pointer;
+}
+
+.button-popUp{
+    color: whitesmoke;
+    background-color: grey;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+.button-popUp:hover {
+    border: 2px solid rgb(61, 41, 211);
+    cursor: pointer;
+    border-radius: 5px;
+}
+#btn:hover {
+    color: whitesmoke;
+    background-color: red;
+    cursor: pointer;
+}
+
+.Wrong-btn{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(2) {
+    width: 200px;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(3){
+    width: 200px;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(4){
+    width: 200px;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(5) {
+    width: 200px;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(6) {
+    width: 200px;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(7) {
+    width: 200px;
+}
+#root>div>div>div.table-body>table>thead>th:nth-child(8) {
+    width: 200px;
+}
+.wrong-button-edit{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Wrong-btn:hover{
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+}
+#buttn:hover{
+background-color: red;
+cursor: pointer;
+}
+
+.buttn:hover{
+    cursor:pointer;
+    border-radius: 10px;
+}
